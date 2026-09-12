@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "vip.prestigeclient.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinKeyboardInput"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
