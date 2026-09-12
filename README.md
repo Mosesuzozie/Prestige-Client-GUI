@@ -1,4 +1,4 @@
-# Prestige Client GUI
+Prestige Client GUI
 
 A premium, customizable Minecraft Fabric client GUI designed for Minecraft 1.21.11.
 
@@ -20,31 +20,14 @@ Prestige Client GUI provides a clean category-based interface for managing clien
 - 💾 Configuration/preferences support
 - ⚡ Lightweight client-side design
 
-📁 Categories
+📂 Categories
 
-⚔️ Combat
-
-Combat-related modules and utilities.
-
-🔨 Mace
-
-Mace PvP and mace-related modules.
-
-🛠️ Misc
-
-General-purpose client features.
-
-🏃 Movement
-
-Movement and mobility improvements.
-
-🗡️ Spear
-
-Spear-related utilities and features.
-
-👁️ Visual
-
-Visual and rendering-related modules.
+- ⚔️ Combat
+- 🔨 Mace
+- 🛠️ Misc
+- 🏃 Movement
+- 🗡️ Spear
+- 👁️ Visual
 
 🧩 Modules
 
@@ -68,57 +51,64 @@ Prestige Client GUI currently includes modules such as:
 - Pearl Trajectory
 - Render Optimizer
 
-More modules can be added as the project develops.
-
 🎮 Controls
 
 Right Shift — Open Prestige ClickGUI
 
 Module keybinds can be customized through the GUI.
 
-🛠️ Requirements
+📦 Dependencies
 
-- Minecraft 1.21.11
-- Fabric Loader 0.18.4+
-- Fabric API
-- Java 21+
-- Fabric Loom 1.17.13
+Required to Run
 
-🔨 Building
+Dependency| Version
+Minecraft| "1.21.11"
+Fabric Loader| "0.18.4+"
+Fabric API| "0.141.1+1.21.11"
 
-Clone the repository and run:
+Required to Build
 
-./gradlew jar
+Dependency| Version
+Fabric Loom| "1.17.13"
+Yarn Mappings| "1.21.11+build.6"
 
-The compiled ".jar" will be generated in:
+«Note: Fabric Loom and Yarn mappings are build-time dependencies. They are not required for players to run the finished mod ".jar".»
 
-build/libs/
-
-📦 Project Structure
+📁 Project Structure
 
 Prestige-Client-GUI/
 ├── .github/
 │   └── workflows/
 │       └── build.yml
+│
 ├── src/
 │   └── main/
 │       ├── java/
 │       │   └── vip/
 │       │       └── prestigeclient/
+│       │           ├── PrestigeClient.java
 │       │           ├── gui/
 │       │           │   ├── PrestigeClickGUI.java
-│       │           │   ├── PrestigeConfigAndTheme.java
-│       │           │   ├── PrestigeFabricInitializer.java
-│       │           │   ├── PrestigeModulesRegistry.java
 │       │           │   └── PrestigeRenderer.java
+│       │           ├── modules/
+│       │           │   └── PrestigeModulesRegistry.java
+│       │           ├── config/
+│       │           │   └── PrestigeConfigAndTheme.java
 │       │           └── mixin/
 │       │               └── MixinKeyboardInput.java
+│       │
 │       └── resources/
 │           ├── fabric.mod.json
 │           └── prestigeclient.mixins.json
+│
 ├── build.gradle
 ├── gradle.properties
 ├── settings.gradle
+├── gradlew
+├── gradlew.bat
+├── gradle/
+│   └── wrapper/
+│
 └── README.md
 
 🚀 GitHub Actions
@@ -129,9 +119,7 @@ Every time the project is pushed, the workflow can compile the project using Gra
 
 🎨 Customization
 
-Prestige Client GUI is designed to be customizable.
-
-The project includes support for:
+Prestige Client GUI supports:
 
 - Custom colors
 - Themes
