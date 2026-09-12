@@ -4,7 +4,7 @@ A premium, customizable Minecraft Fabric client GUI designed for Minecraft 1.21.
 
 Prestige Client GUI provides a clean category-based interface for managing client modules, configurations, themes, and keybinds.
 
-✨ Features
+# ✨ Features
 
 - 🎨 Premium ClickGUI interface
 - 📂 Organized module categories
@@ -20,7 +20,7 @@ Prestige Client GUI provides a clean category-based interface for managing clien
 - 💾 Configuration/preferences support
 - ⚡ Lightweight client-side design
 
-📂 Categories
+# 📂 Categories
 
 - ⚔️ Combat
 - 🔨 Mace
@@ -29,7 +29,7 @@ Prestige Client GUI provides a clean category-based interface for managing clien
 - 🗡️ Spear
 - 👁️ Visual
 
-🧩 Modules
+# 🧩 Modules
 
 Prestige Client GUI currently includes modules such as:
 
@@ -51,13 +51,13 @@ Prestige Client GUI currently includes modules such as:
 - Pearl Trajectory
 - Render Optimizer
 
-🎮 Controls
+# 🎮 Controls
 
 Right Shift — Open Prestige ClickGUI
 
 Module keybinds can be customized through the GUI.
 
-📦 Dependencies
+# 📦 Dependencies
 
 Required to Run
 
@@ -74,37 +74,9 @@ Yarn Mappings| "1.21.11+build.6"
 
 «Note: Fabric Loom and Yarn mappings are build-time dependencies. They are not required for players to run the finished mod ".jar".»
 
-📁 Project Structure
 
-Prestige-Client-GUI/
-├── .github/
-│   └── workflows/
-│       └── build.yml
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── vip/prestigeclient/
-│       │       ├── gui/
-│       │       ├── modules/
-│       │       ├── config/
-│       │       └── mixin/
-│       └── resources/
-│           ├── fabric.mod.json
-│           └── prestigeclient.mixins.json
-├── build.gradle
-├── gradle.properties
-├── settings.gradle
-├── gradlew
-├── gradlew.bat
-└── README.md
 
-🚀 GitHub Actions
-
-The project includes a GitHub Actions workflow that automatically builds the client.
-
-Every time the project is pushed, the workflow can compile the project using Gradle.
-
-🎨 Customization
+# 🎨 Customization
 
 Prestige Client GUI supports:
 
@@ -115,19 +87,13 @@ Prestige Client GUI supports:
 - Searchable modules
 - Category organization
 
-📌 Project Status
-
-In Development 🚧
-
-Prestige Client GUI is actively being developed. Features, modules, and the GUI are subject to change.
-
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
 
 ---
 
-👑 Prestige Client GUI
+# 👑 Prestige Client GUI
 
 Built for Minecraft 1.21.11
 
