@@ -1,3 +1,12 @@
-plugins {
-    id 'fabric-loom' version '1.21.11' // replace x with the current patch — see below
+pluginManagement {
+    repositories {
+        maven {
+            name = "Fabric"
+            url = "https://maven.fabricmc.net/"
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
+
+rootProject.name = "Prestige-Client-GUI"
