@@ -74,8 +74,6 @@ Yarn Mappings| "1.21.11+build.6"
 
 «Note: Fabric Loom and Yarn mappings are build-time dependencies. They are not required for players to run the finished mod ".jar".»
 
-
-
 # 🎨 Customization
 
 Prestige Client GUI supports:
@@ -86,12 +84,6 @@ Prestige Client GUI supports:
 - Keybind configuration
 - Searchable modules
 - Category organization
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
 
 # 👑 Prestige Client GUI
 
