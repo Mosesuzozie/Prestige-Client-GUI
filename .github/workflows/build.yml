@@ -1,8 +1,7 @@
-name: Java JAR Build Engine
+name: Build Prestige Client GUI
 
 on:
   push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -10,22 +9,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4.2.2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Set up JDK 21
-      uses: actions/setup-java@v5
-      with:
-        java-version: '21'
-        distribution: 'temurin'
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
 
-    - name: Compile and Package JAR
-      run: |
-        gradle jar
+      - name: Build
+        run: gradle build
 
-    - name: Upload Finished JAR File
-      uses: actions/upload-artifact@v4.4.3
-      with:
-        name: PrestigeClientGUI-JAR
-        path: build/libs/*.jar
-        
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrestigeClientGUI-JAR
+          path: build/libs/*.jar
+          if-no-files-found: error
