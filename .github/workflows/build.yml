@@ -22,7 +22,8 @@ jobs:
     - name: Compile and Package JAR
       run: |
         gradle jar
-            - name: Upload Finished JAR File
+
+    - name: Upload Finished JAR File
       uses: actions/upload-artifact@v4.4.3
       with:
         name: PrestigeClientGUI-JAR
