@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "prestigeclient",
+  "version": "1.0.0",
+  "name": "Prestige Client GUI",
+  "description": "Premium layout user interface config overlay engine.",
+  "authors": [ "PrestigeDev" ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "vip.prestigeclient.gui.PrestigeFabricInitializer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "==1.21.11",
+    "java": ">=21"
+  }
+}
