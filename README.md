@@ -80,35 +80,22 @@ Prestige-Client-GUI/
 ├── .github/
 │   └── workflows/
 │       └── build.yml
-│
 ├── src/
 │   └── main/
 │       ├── java/
-│       │   └── vip/
-│       │       └── prestigeclient/
-│       │           ├── PrestigeClient.java
-│       │           ├── gui/
-│       │           │   ├── PrestigeClickGUI.java
-│       │           │   └── PrestigeRenderer.java
-│       │           ├── modules/
-│       │           │   └── PrestigeModulesRegistry.java
-│       │           ├── config/
-│       │           │   └── PrestigeConfigAndTheme.java
-│       │           └── mixin/
-│       │               └── MixinKeyboardInput.java
-│       │
+│       │   └── vip/prestigeclient/
+│       │       ├── gui/
+│       │       ├── modules/
+│       │       ├── config/
+│       │       └── mixin/
 │       └── resources/
 │           ├── fabric.mod.json
 │           └── prestigeclient.mixins.json
-│
 ├── build.gradle
 ├── gradle.properties
 ├── settings.gradle
 ├── gradlew
 ├── gradlew.bat
-├── gradle/
-│   └── wrapper/
-│
 └── README.md
 
 🚀 GitHub Actions
