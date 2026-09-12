@@ -1,9 +1,3 @@
-pluginManagement {
-    repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        gradlePluginPortal()
-    }
+plugins {
+    id 'fabric-loom' version '1.14.x' // replace x with the current patch — see below
 }
